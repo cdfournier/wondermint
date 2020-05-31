@@ -1,0 +1,67 @@
+// HIND FONT WEIGHTS
+@mixin light {font-weight: 300;}
+@mixin regular {font-weight: 400;}
+@mixin medium {font-weight: 500;}
+@mixin semi-bold {font-weight: 600;}
+@mixin bold {font-weight: 700;}
+
+
+// TYPOGRAPHY: all typography is set to a 1.250 Major-Third type-scale
+h1, h2, h3, h4, h5, p {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5 {
+  @include bold;
+  line-height: 1.125;
+}
+
+h1 {font-size: 3.502rem;}
+h2 {font-size: 2.441rem;}
+h3 {font-size: 1.953rem;}
+h4 {font-size: 1.563rem;}
+h5 {font-size: 1.25rem;}
+
+p {
+  max-width: 40rem;
+  padding: 1rem 0 0;
+  font-size: 1rem;
+}
+
+small {font-size: 0.8rem;}
+
+p.xsmall {font-size: 0.64rem;}
+p.xxsmall {font-size: 0.512rem;}
+
+strong, em {@include bold;}
+
+.bold {@include bold;}
+
+
+// SPACING
+h2 + h3,
+h1 + p, h2 + p, h3 + p, h4 + p, h5 + p,
+h1 + ul, h2 + ul, h3 + ul, h4 + ul, h5 + ul,
+h1 + ol, h2 + ol, h3 + ol, h4 + ol, h5 + ol {padding: 0.512rem 0 0;}
+
+p + h1, p + h2, p + h3, p + h4, p + h5,
+ul + h1, ul + h2, ul + h3, ul + h4, ul + h5,
+ol + h1, ol + h2, ol + h3, ol + h4, ol + h5,
+dl + h1, dl + h2, dl + h3, dl + h4, dl + h5 {padding: 1rem 0 0;}
+
+
+// TEXT LINKS
+h1 a, h2 a, h3 a, h4 a, h5 a, p a,
+small a, strong a, em a, a {
+  @include bold;
+  color: $mint;
+}
+
+
+// VISUALLY HIDDEN
+.visuallyhidden {display: none;}

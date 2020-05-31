@@ -1,0 +1,128 @@
+// WIDTH
+.xl, .lg, .md, .sm, .xs {
+  width: 100%;
+}
+
+.xl.always {width: 100%;}
+.lg.always {width: 65%;}
+.md.always {width: 50%;}
+.sm.always {width: 35%;}
+.xs.always {width: 50%;}
+
+@media (min-width: 46rem) {
+  .xl {width: 100%;}
+  .lg {width: 65%;}
+  .md {width: 50%;}
+  .sm {width: 35%;}
+  .xs, .xs.always {width: 25%;}
+  .xl.end, .lg.end, .md.end, .sm.end {align-self: flex-end;}
+}
+
+
+// HEIGHT
+.tall {min-height: 100vh;}
+.short {min-height: 50vh;}
+
+
+// VERTICAL ALIGNMENT
+.ver-center {align-items: center;}
+
+
+// HORIZONTAL ALIGNMENT
+.hor-center {text-align: center;}
+
+
+// STACK
+main {
+  .content {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    .box {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      margin: 0 auto;
+      padding: 0;
+      .stack {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        overflow: hidden;
+      }
+      picture {
+        display: block;
+        position: relative;
+        width: 100%;
+        min-height: 50vh;
+        img {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          width: auto;
+          height: 100%;
+        }
+      }
+    }
+    .box.tall {
+      .stack {
+          picture {min-height: 50vh;}
+          .text {padding: 2rem;}
+      }
+    }
+  }
+}
+
+@media (orientation: landscape) {
+  main {
+    .content {
+      .box {
+        picture {
+          img {
+            min-width: 100%;
+            height: auto;
+          }
+        }
+      }
+    }  
+  }
+}
+
+@media (min-width: 46rem) {
+  main {
+    .content {
+      .box.tall {
+        .stack {
+          picture {min-height: 65vh;}
+        }
+      }
+    }
+  }
+}
+
+
+// TEXT
+.text {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0 2rem 2rem;
+  p:first-child {padding: 0;}
+  p.big {
+    @include bold;
+    font-size: 300%;
+    line-height: 1.25;
+  }
+}
+
+@media (orientation: landscape) {
+  .text {padding: 2rem;}
+}
