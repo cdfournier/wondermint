@@ -1,0 +1,86 @@
+// BUTTONS
+button, .button, a.button {
+  display: inline-flex;
+  align-items: center;
+  align-self: start;
+  justify-content: center;
+  min-width: 10ch;
+  margin: 1.5rem 0 0;
+  padding: 0 1.5rem;
+  border: 1px solid white;
+  @include font-weight-bold;
+  font-size: 0.8rem;
+  line-height: 2.375rem;
+  text-align: center;
+  color: inherit;
+  cursor: pointer;
+  @include transition(all, 0.25s, ease);
+}
+
+
+// BUTTON STYLES
+button.white-fill, .button.white-fill, a.white-fill {
+  border-color: white;
+  color: $mint;
+  background: white;
+  &:hover, &:focus {
+    border-color: white;
+    color: white;
+    background: $mint;
+  }
+}
+
+button.white-border, .button.white-border, a.white-border {
+  border-color: white;
+  color: white;
+  background: $mint;
+  &:hover, &:focus {
+    border-color: white;
+    color: $mint;
+    background: white;
+  }
+}
+
+button.mint-fill, .button.mint-fill, a.mint-fill {
+  border-color: $mint;
+  color: white;
+  background: $mint;
+  &:hover, &:focus {
+    border-color: $mint;
+    color: $mint;
+    background: white;
+  }
+}
+
+button.mint-border, .button.mint-border, a.mint-border {
+  border-color: $mint;
+  color: $mint;
+  background: white;
+  &:hover, &:focus {
+    border-color: $mint;
+    color: white;
+    background: $mint;
+  }
+}
+
+button.black-fill, .button.black-fill, a.black-fill {
+  border-color: black;
+  color: white;
+  background: black;
+  &:hover, &:focus {
+    border-color: black;
+    color: black;
+    background: white;
+  }
+}
+
+button.black-border, .button.black-border, a.black-border {
+  border-color: black;
+  color: black;
+  background: white;
+  &:hover, &:focus {
+    border-color: black;
+    color: white;
+    background: black;
+  }
+}

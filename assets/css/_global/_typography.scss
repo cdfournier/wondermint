@@ -1,9 +1,13 @@
 // HIND FONT WEIGHTS
-@mixin light {font-weight: 300;}
-@mixin regular {font-weight: 400;}
-@mixin medium {font-weight: 500;}
-@mixin semi-bold {font-weight: 600;}
-@mixin bold {font-weight: 700;}
+@mixin font-weight-thin {font-weight: 100;}
+@mixin font-weight-xlight {font-weight: 200;}
+@mixin font-weight-light {font-weight: 300;}
+@mixin font-weight-regular {font-weight: 400;}
+@mixin font-weight-medium {font-weight: 500;}
+@mixin font-weight-semi-bold {font-weight: 600;}
+@mixin font-weight-bold {font-weight: 700;}
+@mixin font-weight-xbold {font-weight: 800;}
+@mixin font-weight-black {font-weight: 900;}
 
 
 // TYPOGRAPHY: all typography is set to a 1.250 Major-Third type-scale
@@ -17,7 +21,7 @@ h1, h2, h3, h4, h5, p {
 }
 
 h1, h2, h3, h4, h5 {
-  @include bold;
+  @include font-weight-bold;
   line-height: 1.125;
 }
 
@@ -38,9 +42,9 @@ small {font-size: 0.8rem;}
 p.xsmall {font-size: 0.64rem;}
 p.xxsmall {font-size: 0.512rem;}
 
-strong, em {@include bold;}
+strong, em {@include font-weight-bold;}
 
-.bold {@include bold;}
+.bold {@include font-weight-bold;}
 
 
 // SPACING
@@ -58,7 +62,7 @@ dl + h1, dl + h2, dl + h3, dl + h4, dl + h5 {padding: 1rem 0 0;}
 // TEXT LINKS
 h1 a, h2 a, h3 a, h4 a, h5 a, p a,
 small a, strong a, em a, a {
-  @include bold;
+  @include font-weight-bold;
   color: $mint;
 }
 
