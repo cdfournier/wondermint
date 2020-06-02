@@ -198,8 +198,20 @@ main {
   background-position: right center;
 }
 
+.nesa {
+  background-image: url(../images/nesa-by-makers-unsplash-1x.jpg);
+  background-position: right center;
+}
+
+.nesab {
+  background-image: url(../images/nesa-by-makers-unsplash-v2-1x.jpg);
+  background-position: center;
+}
+
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-width: 46rem) {
   .felicia {background-image: url(../images/felicia-buitenwerf-unsplash-2x.jpg);}
   .joanna {background-image: url(../images/joanna-nix-unsplash-2x.jpg);}
   .naassom {background-image: url(../images/naassom-azevedo-unsplash-2x.jpg);}
+  .nesa {background-image: url(../images/nesa-by-makers-unsplash-2x.jpg);}
+  .nesab {background-image: url(../images/nesa-by-makers-unsplash-v2-1x.jpg);}
 }

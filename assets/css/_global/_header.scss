@@ -11,7 +11,7 @@ header {
   background: $mint;
   .logo {
     display: none;
-    max-width: 20rem;
+    max-width: 16rem;
     margin: 0;
     padding: 0;
     @include transition (all, 0.25s, ease, 0.125s);

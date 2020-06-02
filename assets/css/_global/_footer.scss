@@ -1,0 +1,21 @@
+// FOOTER
+footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 2rem;
+  color: white;
+  text-align: center;
+  background: $mint;
+}
+
+@media (orientation: landscape), (min-width: 46rem) {
+  footer {
+    align-items: flex-end;
+    text-align: right;
+  }
+}
