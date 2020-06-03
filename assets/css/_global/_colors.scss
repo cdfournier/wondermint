@@ -19,6 +19,11 @@ $gray-dark-charcoal: #333333;
   background: $mint;
 }
 
+.bg-black {
+  color: white;
+  background: black;
+}
+
 
 // COLOR MIXING
 @function tint($color, $percentage) {

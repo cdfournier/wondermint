@@ -79,6 +79,7 @@ small a, strong a, em a {
 ol {
   display: flex;
   flex-direction: column;
+  position: relative;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -118,6 +119,15 @@ ol {
       background: $mint;
       content: "";
     }
+  }
+}
+
+ol.white {
+  li {
+    border-color: white;
+    color: white;
+    span::before {color: white;}
+    span::after {background: white;}
   }
 }
 

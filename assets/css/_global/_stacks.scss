@@ -109,6 +109,7 @@ main {
 // TEXT
 .text {
   display: block;
+  position: relative;
   margin: 0;
   padding: 2rem;
   p:first-child {padding: 0;}
@@ -148,19 +149,14 @@ main {
 
 
 /* BACKGROUND IMAGE USAGE */
+.chase {
+  background-image: url(../images/chase-jiggiemon-wilson-unsplash-desat-1x.jpg);
+  background-position: right bottom;
+}
+
 .felicia {
   background-image: url(../images/felicia-buitenwerf-unsplash-1x.jpg);
   background-position: center center;
-}
-
-.joanna {
-  background-image: url(../images/joanna-nix-unsplash-1x.jpg);
-  background-position: center center;
-}
-
-.naassom {
-  background-image: url(../images/naassom-azevedo-unsplash-1x.jpg);
-  background-position: right center;
 }
 
 .nesa {
@@ -174,9 +170,8 @@ main {
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-width: 46rem) {
+  .chase {background-image: url(../images/chase-jiggiemon-wilson-unsplash-desat-2x.jpg);}
   .felicia {background-image: url(../images/felicia-buitenwerf-unsplash-2x.jpg);}
-  .joanna {background-image: url(../images/joanna-nix-unsplash-2x.jpg);}
-  .naassom {background-image: url(../images/naassom-azevedo-unsplash-2x.jpg);}
   .nesa {background-image: url(../images/nesa-by-makers-unsplash-2x.jpg);}
   .nesab {background-image: url(../images/nesa-by-makers-unsplash-v2-1x.jpg);}
 }

@@ -2,6 +2,10 @@
   color: white;
   background: #329e41; }
 
+.bg-black {
+  color: white;
+  background: black; }
+
 ::-moz-selection {
   color: white;
   background: #329e41; }
@@ -135,6 +139,7 @@ small a, strong a, em a {
 ol {
   display: flex;
   flex-direction: column;
+  position: relative;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -171,6 +176,14 @@ ol {
       margin: 0;
       background: #329e41;
       content: ""; }
+
+ol.white li {
+  border-color: white;
+  color: white; }
+  ol.white li span::before {
+    color: white; }
+  ol.white li span::after {
+    background: white; }
 
 @media (orientation: landscape), (min-width: 46rem) {
   ol {
@@ -691,6 +704,7 @@ main .content {
 
 .text {
   display: block;
+  position: relative;
   margin: 0;
   padding: 2rem; }
   .text p:first-child {
@@ -721,17 +735,13 @@ main .content {
     padding: 0 2rem; } }
 
 /* BACKGROUND IMAGE USAGE */
+.chase {
+  background-image: url(../images/chase-jiggiemon-wilson-unsplash-desat-1x.jpg);
+  background-position: right bottom; }
+
 .felicia {
   background-image: url(../images/felicia-buitenwerf-unsplash-1x.jpg);
   background-position: center center; }
-
-.joanna {
-  background-image: url(../images/joanna-nix-unsplash-1x.jpg);
-  background-position: center center; }
-
-.naassom {
-  background-image: url(../images/naassom-azevedo-unsplash-1x.jpg);
-  background-position: right center; }
 
 .nesa {
   background-image: url(../images/nesa-by-makers-unsplash-1x.jpg);
@@ -742,12 +752,10 @@ main .content {
   background-position: center; }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-width: 46rem) {
+  .chase {
+    background-image: url(../images/chase-jiggiemon-wilson-unsplash-desat-2x.jpg); }
   .felicia {
     background-image: url(../images/felicia-buitenwerf-unsplash-2x.jpg); }
-  .joanna {
-    background-image: url(../images/joanna-nix-unsplash-2x.jpg); }
-  .naassom {
-    background-image: url(../images/naassom-azevedo-unsplash-2x.jpg); }
   .nesa {
     background-image: url(../images/nesa-by-makers-unsplash-2x.jpg); }
   .nesab {
