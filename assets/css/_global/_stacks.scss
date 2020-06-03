@@ -26,6 +26,7 @@
 
 // VERTICAL ALIGNMENT
 .ver-center {align-items: center;}
+.bottom {justify-content: flex-end;}
 
 
 // HORIZONTAL ALIGNMENT
@@ -77,6 +78,11 @@ main {
         opacity: 0;
         mix-blend-mode: multiply;
       }
+/*
+      .overlay + .text {
+        h2 {font-size: 3.502rem;}
+      }
+*/
       .stack {
         display: flex;
         align-items: center;
@@ -98,9 +104,15 @@ main {
       }
     }
     .box.tall {
-      .stack {
-        .text {padding: 2rem;}
-      }
+//       .stack {.text {padding: 2rem;}}
+    }
+    .box.top {
+      justify-content: flex-start;
+      .text {padding: 1rem 2rem 2rem;}
+    }
+    .box.bottom {
+      justify-content: flex-end;
+      .text {padding: 2rem 2rem 0;}
     }
   }
 }
@@ -118,10 +130,24 @@ main {
 .text.white {color: white;}
 
 .text.big {
+  h2 {font-size: 3.502rem;}
   p {
-    @include font-weight-bold;
-    font-size: 250%;
-    line-height: 1.25;    
+    max-width: none;
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 46rem) {
+  .text.big {
+    h2 {font-size: 500%;}
+    p {font-size: 1.563rem;}
+  }
+}
+
+@media (min-width: 88rem) {
+  .text.big {
+    h2 {font-size: 700%;}
+    p {font-size: 1.953rem;}
   }
 }
 

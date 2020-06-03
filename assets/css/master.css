@@ -641,6 +641,9 @@ footer {
 .ver-center {
   align-items: center; }
 
+.bottom {
+  justify-content: flex-end; }
+
 .hor-center {
   text-align: center; }
 
@@ -660,7 +663,12 @@ main .content {
     margin: 0 auto;
     padding: 0;
     background-repeat: no-repeat;
-    background-size: cover; }
+    background-size: cover;
+    /*
+      .overlay + .text {
+        h2 {font-size: 3.502rem;}
+      }
+*/ }
     main .content .box picture {
       display: block;
       position: relative;
@@ -699,8 +707,14 @@ main .content {
             width: auto;
             min-width: inherit;
             height: 100%; }
-  main .content .box.tall .stack .text {
-    padding: 2rem; }
+  main .content .box.top {
+    justify-content: flex-start; }
+    main .content .box.top .text {
+      padding: 1rem 2rem 2rem; }
+  main .content .box.bottom {
+    justify-content: flex-end; }
+    main .content .box.bottom .text {
+      padding: 2rem 2rem 0; }
 
 .text {
   display: block;
@@ -713,10 +727,24 @@ main .content {
 .text.white {
   color: white; }
 
+.text.big h2 {
+  font-size: 3.502rem; }
+
 .text.big p {
-  font-weight: 700;
-  font-size: 250%;
-  line-height: 1.25; }
+  max-width: none;
+  font-size: 1.25rem; }
+
+@media (min-width: 46rem) {
+  .text.big h2 {
+    font-size: 500%; }
+  .text.big p {
+    font-size: 1.563rem; } }
+
+@media (min-width: 88rem) {
+  .text.big h2 {
+    font-size: 700%; }
+  .text.big p {
+    font-size: 1.953rem; } }
 
 .logo {
   display: grid;
