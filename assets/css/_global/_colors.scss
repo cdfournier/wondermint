@@ -20,7 +20,7 @@ $gray-dark-charcoal: #333333;
 }
 
 
-// COLORS MIXING
+// COLOR MIXING
 @function tint($color, $percentage) {
   @return mix(white, $color, $percentage);
 }
