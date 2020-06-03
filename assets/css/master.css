@@ -102,7 +102,8 @@ p.xxsmall {
   font-size: 0.512rem; }
 
 strong, em {
-  font-weight: 700; }
+  font-weight: 700;
+  font-style: normal; }
 
 .bold {
   font-weight: 700; }
@@ -120,9 +121,13 @@ dl + h1, dl + h2, dl + h3, dl + h4, dl + h5 {
   padding: 2rem 0 0; }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, p a,
-small a, strong a, em a, a {
+small a, strong a, em a {
   font-weight: 700;
   color: #329e41; }
+  h1 a:hover, h1 a:focus, h2 a:hover, h2 a:focus, h3 a:hover, h3 a:focus, h4 a:hover, h4 a:focus, h5 a:hover, h5 a:focus, p a:hover,
+  p a:focus,
+  small a:hover, small a:focus, strong a:hover, strong a:focus, em a:hover, em a:focus {
+    color: #026b47; }
 
 .visuallyhidden {
   display: none; }
@@ -179,6 +184,13 @@ ol {
 @media (orientation: landscape), (min-width: 62rem) {
   ol li {
     width: calc(25% - 1rem); } }
+
+ul {
+  margin: 0 0 0 2rem;
+  list-style-position: outside;
+  list-style-type: disc; }
+  ul li {
+    margin: 0 0 0.8rem; }
 
 button, .button, a.button {
   display: inline-flex;
@@ -274,6 +286,116 @@ button.black-border, .button.black-border, a.black-border {
     border-color: black;
     color: white;
     background: black; }
+
+/*
+FORM ELEMENTS
+  resets
+  form
+  fieldset
+  input, label, placeholder
+*/
+input[type="password"],
+input[type="checkbox"],
+input[type="number"],
+input[type="select"],
+input[type="search"],
+input[type="radio"],
+input[type="email"],
+input[type="date"],
+input[type="file"],
+input[type="text"],
+input[type="tel"],
+input[type="url"] {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  font-size: 1rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-transition: all 0.25s ease 0s;
+  -moz-transition: all 0.25s ease 0s;
+  -ms-transition: all 0.25s ease 0s;
+  -o-transition: all 0.25s ease 0s;
+  transition: all 0.25s ease 0s; }
+
+form {
+  display: flex;
+  flex-direction: column; }
+
+fieldset {
+  position: relative;
+  width: 100%;
+  max-width: 32rem;
+  margin: 0 0 1rem;
+  padding: 1.5rem 0 0;
+  border: none; }
+
+fieldset.sm {
+  width: 50%; }
+
+input {
+  width: 100%;
+  min-height: 3rem;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #329e41;
+  cursor: text; }
+
+input:placeholder {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: text;
+  transition: inherit; }
+
+label {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  background-color: white;
+  -webkit-transform: translate(0, 2.25rem);
+  -moz-transform: translate(0, 2.25rem);
+  -ms-transform: translate(0, 2.25rem);
+  -o-transform: translate(0, 2.25rem);
+  transform: translate(0, 2.25rem);
+  -webkit-transition: all 0.25s ease 0s;
+  -moz-transition: all 0.25s ease 0s;
+  -ms-transition: all 0.25s ease 0s;
+  -o-transition: all 0.25s ease 0s;
+  transition: all 0.25s ease 0s; }
+
+input:focus + label,
+input:not(:placeholder-shown) + label {
+  width: auto;
+  font-size: 0.8rem;
+  background-color: transparent;
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0); }
+
+.input-icon {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 1.5rem;
+  right: 0.5rem;
+  width: 1.5rem;
+  height: 3rem;
+  cursor: pointer; }
+  .input-icon svg {
+    position: absolute;
+    right: 0;
+    fill: #329e41; }
 
 .skip {
   display: flex;
@@ -444,7 +566,6 @@ footer {
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 60%;
     margin: 0 auto; }
     footer .brand .logo {
       max-width: 12rem;
@@ -453,11 +574,18 @@ footer {
       footer .brand .logo svg {
         fill: white; }
     footer .brand p {
+      font-weight: 500;
       font-size: 0.8rem; }
   footer .contact {
     width: 100%; }
     footer .contact button, footer .contact .button, footer .contact a.button {
       margin: 2rem auto; }
+
+@media (orientation: landscape), (min-width: 46rem) {
+  footer .brand {
+    width: 60%; }
+    footer .brand p {
+      max-width: 32rem; } }
 
 .xl, .lg, .md, .sm, .xs {
   width: 100%; }
@@ -505,7 +633,7 @@ footer {
 
 main .content {
   display: flex;
-  align-items: flex-start;
+  align-items: stretch;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -561,36 +689,6 @@ main .content {
   main .content .box.tall .stack .text {
     padding: 2rem; }
 
-/*
-@media (orientation: landscape) {
-  main {
-    .content {
-      .box {
-        picture {
-          min-height: 100vh;
-          img {
-            min-width: 100%;
-            height: auto;
-          }
-        }
-      }
-    }  
-  }
-}
-
-@media (min-width: 46rem) {
-  main {
-    .content {
-      .box.tall {
-        picture {min-height: 100vh;}
-        .stack {
-          picture {min-height: 65vh;}
-        }
-      }
-    }
-  }
-}
-*/
 .text {
   display: block;
   margin: 0;

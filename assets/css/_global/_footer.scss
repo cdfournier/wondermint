@@ -18,7 +18,6 @@ footer {
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 60%;
     margin: 0 auto;
     .logo {
       max-width: 12rem;
@@ -26,7 +25,10 @@ footer {
       padding: 0;
       svg {fill: white;}
     }
-    p {font-size: 0.8rem;}
+    p {
+      @include font-weight-medium;
+      font-size: 0.8rem;
+    }
   }
   .contact {
     width: 100%;
@@ -38,5 +40,9 @@ footer {
 
 @media (orientation: landscape), (min-width: 46rem) {
   footer {
+    .brand {
+      width: 60%;
+      p {max-width: 32rem;}
+    }
   }
 }

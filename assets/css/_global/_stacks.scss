@@ -36,7 +36,7 @@
 main {
   .content {
     display: flex;
-    align-items: flex-start;
+    align-items: stretch;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -67,7 +67,6 @@ main {
           min-height: 100%;
         }
       }
-
       .overlay {
         display: block;
         position: absolute;
@@ -106,37 +105,6 @@ main {
   }
 }
 
-/*
-@media (orientation: landscape) {
-  main {
-    .content {
-      .box {
-        picture {
-          min-height: 100vh;
-          img {
-            min-width: 100%;
-            height: auto;
-          }
-        }
-      }
-    }  
-  }
-}
-
-@media (min-width: 46rem) {
-  main {
-    .content {
-      .box.tall {
-        picture {min-height: 100vh;}
-        .stack {
-          picture {min-height: 65vh;}
-        }
-      }
-    }
-  }
-}
-*/
-
 
 // TEXT
 .text {
@@ -154,9 +122,6 @@ main {
     font-size: 250%;
     line-height: 1.25;    
   }
-}
-
-@media (orientation: landscape) {
 }
 
 

@@ -1,0 +1,108 @@
+/*
+FORM ELEMENTS
+  resets
+  form
+  fieldset
+  input, label, placeholder
+*/
+
+
+// RESETS
+input[type="password"],
+input[type="checkbox"],
+input[type="number"],
+input[type="select"],
+input[type="search"],
+input[type="radio"],
+input[type="email"],
+input[type="date"],
+input[type="file"],
+input[type="text"],
+input[type="tel"],
+input[type="url"] {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  font-size: 1rem;
+  @include appearance(none);
+  @include transition(all, 0.25s, ease);
+}
+
+
+// FORM
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+
+// FIELDSET
+fieldset {
+  position: relative;
+  width: 100%;
+  max-width: 32rem;
+  margin: 0 0 1rem;
+  padding: 1.5rem 0 0;
+  border: none;
+}
+
+fieldset.sm {width: 50%;}
+
+
+// INPUT, LABEL, PLACEHOLDER
+input {
+  width: 100%;
+  min-height: 3rem;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid $mint;
+  cursor: text;
+}
+
+input:placeholder {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: text;
+  transition: inherit;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  @include font-weight-bold;
+  background-color: white;
+  @include transform(translate(0, 2.25rem));
+  @include transition(all, 0.25s, ease);
+}
+
+input:focus + label,
+input:not(:placeholder-shown) + label {
+  width: auto;
+  font-size: 0.8rem;
+  background-color: transparent;
+  @include transform(translate(0,0));
+}
+
+.input-icon {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 1.5rem;
+  right: 0.5rem;
+  width: 1.5rem;
+  height: 3rem;
+  cursor: pointer;
+  svg {
+    position: absolute;
+    right: 0;
+    fill: $mint;
+  }
+}

@@ -42,7 +42,10 @@ small {font-size: 0.8rem;}
 p.xsmall {font-size: 0.64rem;}
 p.xxsmall {font-size: 0.512rem;}
 
-strong, em {@include font-weight-bold;}
+strong, em {
+  @include font-weight-bold;
+  font-style: normal;
+}
 
 .bold {@include font-weight-bold;}
 
@@ -61,9 +64,10 @@ dl + h1, dl + h2, dl + h3, dl + h4, dl + h5 {padding: 2rem 0 0;}
 
 // TEXT LINKS
 h1 a, h2 a, h3 a, h4 a, h5 a, p a,
-small a, strong a, em a, a {
+small a, strong a, em a {
   @include font-weight-bold;
   color: $mint;
+  &:hover, &:focus {color: $green-dark;}
 }
 
 
@@ -131,4 +135,13 @@ ol {
   ol {
     li {width: calc(25% - 1rem);}
   }
+}
+
+
+// UNORDERED LISTS
+ul {
+  margin: 0 0 0 2rem;
+  list-style-position: outside;
+  list-style-type: disc;
+  li {margin: 0 0 0.8rem;}
 }
