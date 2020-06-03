@@ -663,12 +663,7 @@ main .content {
     margin: 0 auto;
     padding: 0;
     background-repeat: no-repeat;
-    background-size: cover;
-    /*
-      .overlay + .text {
-        h2 {font-size: 3.502rem;}
-      }
-*/ }
+    background-size: cover; }
     main .content .box picture {
       display: block;
       position: relative;
@@ -707,6 +702,10 @@ main .content {
             width: auto;
             min-width: inherit;
             height: 100%; }
+      main .content .box .stack .box.top {
+        min-height: 35vh; }
+      main .content .box .stack .box.bottom {
+        min-height: 65vh; }
   main .content .box.top {
     justify-content: flex-start; }
     main .content .box.top .text {

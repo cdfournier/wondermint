@@ -78,11 +78,6 @@ main {
         opacity: 0;
         mix-blend-mode: multiply;
       }
-/*
-      .overlay + .text {
-        h2 {font-size: 3.502rem;}
-      }
-*/
       .stack {
         display: flex;
         align-items: center;
@@ -101,6 +96,8 @@ main {
             }
           }
         }
+        .box.top {min-height: 35vh;}
+        .box.bottom {min-height: 65vh;}
       }
     }
     .box.tall {
