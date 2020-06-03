@@ -141,11 +141,12 @@ main {
 // TEXT
 .text {
   display: block;
-  width: 100%;
   margin: 0;
-  padding: 0 2rem 2rem;
+  padding: 2rem;
   p:first-child {padding: 0;}
 }
+
+.text.white {color: white;}
 
 .text.big {
   p {
@@ -156,7 +157,6 @@ main {
 }
 
 @media (orientation: landscape) {
-  .text {padding: 2rem;}
 }
 
 

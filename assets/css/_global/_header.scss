@@ -14,7 +14,6 @@ header {
     max-width: 16rem;
     margin: 0;
     padding: 0;
-    @include transition (all, 0.25s, ease);
     will-change: transform;
     svg {fill: white;}
   }
@@ -43,9 +42,13 @@ header {
       display: grid;
       width: 50%;
       a {
-        svg {@include transition (all, 0.25s, ease);}
+        svg {@include transition (all, 0.325s, ease);}
         &:hover, &:focus {
-          svg {fill: $gray-granite;}
+          svg {
+            fill: $gray-granite;
+            fill: $pale-mint;
+            fill: $green-dark;
+          }
         }
       }
     }
