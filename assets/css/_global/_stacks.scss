@@ -127,7 +127,7 @@ main {
 .text.white {color: white;}
 
 .text.big {
-  h2 {font-size: 3.502rem;}
+  h2 {font-size: 2.802rem;}
   p {
     max-width: none;
     font-size: 1.25rem;
@@ -136,14 +136,14 @@ main {
 
 @media (min-width: 46rem) {
   .text.big {
-    h2 {font-size: 500%;}
+    h2 {font-size: 450%;}
     p {font-size: 1.563rem;}
   }
 }
 
 @media (min-width: 88rem) {
   .text.big {
-    h2 {font-size: 700%;}
+    h2 {font-size: 600%;}
     p {font-size: 1.953rem;}
   }
 }
