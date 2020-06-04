@@ -489,7 +489,8 @@ nav {
     justify-content: flex-end; }
     nav ul li {
       min-width: inherit;
-      margin: 0 0 0 1.5rem; } }
+      margin: 0 0 0 1.5rem;
+      font-size: 1rem; } }
 
 header {
   display: flex;
@@ -765,11 +766,11 @@ main .content {
 
 .christina {
   background-image: url(../images/christina-wocintechchat-com-unsplash-1x.jpg);
-  background-position: right bottom; }
+  background-position: left top; }
 
 .disruptivo {
   background-image: url(../images/disruptivo-unsplash-1x.jpg);
-  background-position: right bottom; }
+  background-position: center; }
 
 .felicia {
   background-image: url(../images/felicia-buitenwerf-unsplash-1x.jpg);
@@ -782,6 +783,10 @@ main .content {
 .nesab {
   background-image: url(../images/nesa-by-makers-unsplash-v2-1x.jpg);
   background-position: center; }
+
+.topo {
+  background-image: url(../images/topography.png);
+  background-repeat: repeat; }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-width: 46rem) {
   .chase {
