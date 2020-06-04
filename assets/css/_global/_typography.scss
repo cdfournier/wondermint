@@ -93,6 +93,7 @@ ol {
     padding: 1rem;
     border: 1px solid $mint;
     border-radius: 0.25rem;
+    @include font-weight-semi-bold;
     span {
       display: flex;
       align-items: flex-start;
@@ -128,6 +129,25 @@ ol.white {
     color: white;
     span::before {color: white;}
     span::after {background: white;}
+  }
+}
+
+ol.icon {
+  li {
+    text-align: center;
+    span::before {display: none;}
+    span {
+      align-items: center;
+      svg {
+        width: auto;
+        height: 2.5rem;
+        margin: 0 0 0.5rem;
+        fill: white;
+      }
+    }
+    span::after {
+      width: 2.5rem;
+    }
   }
 }
 

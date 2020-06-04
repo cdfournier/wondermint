@@ -152,7 +152,8 @@ ol {
     margin: 1rem 0;
     padding: 1rem;
     border: 1px solid #329e41;
-    border-radius: 0.25rem; }
+    border-radius: 0.25rem;
+    font-weight: 600; }
     ol li span {
       display: flex;
       align-items: flex-start;
@@ -184,6 +185,20 @@ ol.white li {
     color: white; }
   ol.white li span::after {
     background: white; }
+
+ol.icon li {
+  text-align: center; }
+  ol.icon li span::before {
+    display: none; }
+  ol.icon li span {
+    align-items: center; }
+    ol.icon li span svg {
+      width: auto;
+      height: 2.5rem;
+      margin: 0 0 0.5rem;
+      fill: white; }
+  ol.icon li span::after {
+    width: 2.5rem; }
 
 @media (orientation: landscape), (min-width: 46rem) {
   ol {
