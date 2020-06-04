@@ -18,7 +18,7 @@ footer {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 0 auto;
+    margin: 0 auto 2rem;
     .logo {
       max-width: 12rem;
       margin: 0 auto;
@@ -28,12 +28,6 @@ footer {
     p {
       @include font-weight-medium;
       font-size: 0.8rem;
-    }
-  }
-  .contact {
-    width: 100%;
-    button, .button, a.button {
-      margin: 2rem auto;
     }
   }
 }

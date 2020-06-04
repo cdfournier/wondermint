@@ -580,7 +580,7 @@ footer {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 0 auto; }
+    margin: 0 auto 2rem; }
     footer .brand .logo {
       max-width: 12rem;
       margin: 0 auto;
@@ -590,10 +590,6 @@ footer {
     footer .brand p {
       font-weight: 500;
       font-size: 0.8rem; }
-  footer .contact {
-    width: 100%; }
-    footer .contact button, footer .contact .button, footer .contact a.button {
-      margin: 2rem auto; }
 
 @media (orientation: landscape), (min-width: 46rem) {
   footer .brand {
