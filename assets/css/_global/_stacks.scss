@@ -129,6 +129,19 @@ main {
     max-width: none;
     font-size: 1.25rem;
   }
+  p.scroll {
+    margin: 1rem 0 0;
+    font-size: 1rem;
+    a {
+      margin: 0;
+      padding: 0.5rem 1rem;
+      border: 1px solid $mint;
+      &:hover, &:focus {
+        color: white;
+        background: $mint;
+      }
+    }
+  }
 }
 
 @media (min-width: 46rem) {
@@ -199,6 +212,16 @@ main {
   background-position: center;
 }
 
+.oleg {
+  background-image: url(../images/oleg-ivanov-unsplash-1x.jpg);
+  background-position: center top;
+}
+
+.thisis {
+  background-image: url(../images/thisisengineering-raeng-unsplash-1x.jpg);
+  background-position: center top;
+}
+
 .topo {
   background-image: url(../images/topography.png);
   background-repeat: repeat;
@@ -211,4 +234,6 @@ main {
   .felicia {background-image: url(../images/felicia-buitenwerf-unsplash-2x.jpg);}
   .nesa {background-image: url(../images/nesa-by-makers-unsplash-2x.jpg);}
   .nesab {background-image: url(../images/nesa-by-makers-unsplash-v2-1x.jpg);}
+  .oleg {background-image: url(../images/oleg-ivanov-unsplash-1x.jpg);}
+  .thisis {background-image: url(../images/thisisengineering-raeng-unsplash-1x.jpg);}
 }
