@@ -730,17 +730,6 @@ main .content {
   max-width: none;
   font-size: 1.25rem; }
 
-.text.big p.scroll {
-  margin: 1rem 0 0;
-  font-size: 1rem; }
-  .text.big p.scroll a {
-    margin: 0;
-    padding: 0.5rem 1rem;
-    border: 1px solid #329e41; }
-    .text.big p.scroll a:hover, .text.big p.scroll a:focus {
-      color: white;
-      background: #329e41; }
-
 @media (min-width: 46rem) {
   .text.big h2 {
     font-size: 450%; }
