@@ -173,13 +173,23 @@ main {
 
 /* BACKGROUND IMAGE USAGE */
 .chase {
-  background-image: url(../images/chase-jiggiemon-wilson-unsplash-desat-1x.jpg);
+  background-image: url(../images/chase-jiggiemon-wilson-unsplash-1x.jpg);
+  background-position: right bottom;
+}
+
+.christina {
+  background-image: url(../images/christina-wocintechchat-com-unsplash-1x.jpg);
+  background-position: right bottom;
+}
+
+.disruptivo {
+  background-image: url(../images/disruptivo-unsplash-1x.jpg);
   background-position: right bottom;
 }
 
 .felicia {
   background-image: url(../images/felicia-buitenwerf-unsplash-1x.jpg);
-  background-position: center center;
+  background-position: right bottom;
 }
 
 .nesa {
@@ -193,7 +203,9 @@ main {
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-width: 46rem) {
-  .chase {background-image: url(../images/chase-jiggiemon-wilson-unsplash-desat-2x.jpg);}
+  .chase {background-image: url(../images/chase-jiggiemon-wilson-unsplash-2x.jpg);}
+  .christina {background-image: url(../images/christina-wocintechchat-com-unsplash-2x.jpg);}
+  .disruptivo {background-image: url(../images/disruptivo-unsplash-2x.jpg);}
   .felicia {background-image: url(../images/felicia-buitenwerf-unsplash-2x.jpg);}
   .nesa {background-image: url(../images/nesa-by-makers-unsplash-2x.jpg);}
   .nesab {background-image: url(../images/nesa-by-makers-unsplash-v2-1x.jpg);}
