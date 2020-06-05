@@ -207,7 +207,9 @@ ol.icon li {
     flex-wrap: wrap;
     justify-content: space-between; }
     ol li {
-      width: calc(50% - 1rem); } }
+      width: calc(50% - 1rem); }
+  ol.icon li {
+    width: calc(33% - 1rem); } }
 
 @media (min-width: 88rem) {
   ol li {
@@ -774,6 +776,10 @@ main .content {
     padding: 0 2rem; } }
 
 /* BACKGROUND IMAGE USAGE */
+.annie {
+  background-image: url(../images/annie-spratt-unsplash-1x.jpg);
+  background-position: right bottom; }
+
 .chase {
   background-image: url(../images/chase-jiggiemon-wilson-unsplash-1x.jpg);
   background-position: right bottom; }
@@ -811,6 +817,8 @@ main .content {
   background-repeat: repeat; }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-width: 46rem) {
+  .annie {
+    background-image: url(../images/annie-spratt-unsplash-2x.jpg); }
   .chase {
     background-image: url(../images/chase-jiggiemon-wilson-unsplash-2x.jpg); }
   .christina {

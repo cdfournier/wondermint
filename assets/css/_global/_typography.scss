@@ -159,6 +159,9 @@ ol.icon {
     justify-content: space-between;
     li {width: calc(50% - 1rem);}
   }
+  ol.icon {
+    li {width: calc(33% - 1rem);}
+  }
 }
 
 @media (min-width: 88rem) {
