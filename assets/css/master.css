@@ -215,11 +215,12 @@ ol.icon li {
   ol li {
     width: calc(25% - 1rem); } }
 
-ul {
-  margin: 0 0 0 2rem;
+ul.bullets {
+  margin: 1rem 0 0 2rem;
+  padding: 0;
   list-style-position: outside;
   list-style-type: disc; }
-  ul li {
+  ul.bullets li {
     margin: 0 0 0.8rem; }
 
 button, .button, a.button {
